@@ -73,7 +73,7 @@ public class BioBuzzStarterbotTeleop extends OpMode {
      * enough to make a successful throw.
      */
     public final int LAUNCHER_TARGET_VELOCITY = 1250;
-    public final int LAUNCHER_MIN_VELOCITY = 1200;
+    public final int LAUNCHER_MIN_VELOCITY = 800;
 
     /*
      * These two variables store the power we need to apply to the motors. In other cases, we may
@@ -267,8 +267,8 @@ public class BioBuzzStarterbotTeleop extends OpMode {
          * inside the hopper.
          */
         if (gamepad1.right_bumper && launcher.getVelocity() > LAUNCHER_MIN_VELOCITY) {
-            windmillServo.setPower(1);
-            intakePower += 0.5;
+            windmillServo.setPower(1.0);
+            intakePower += 0.4;
         } else {
             windmillServo.setPower(0);
         }
