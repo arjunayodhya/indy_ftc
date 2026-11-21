@@ -1,6 +1,7 @@
 import android.util.Size;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-imp
+//more imports needed
+//this is just basic build more needed
 VisionPortal myVisionPortal;
 //builder pattern and method chaining as opposed to individual method calls
 myVisionPortal = new VisionPortal.Builder()
